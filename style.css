@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+
+htm, body{
+	overflow-x: hidden;
+	height: 100%;
+	width: 100%;
+	font-family: 'Poppins', sans-serif;
+	
+}
+
+.navbar{
+	padding: .8rem;
+}
+
+.navbar-nav li{
+	padding-right: 20px;
+}
+.nav-link{
+	font-size: 1.1em !important;
+}
+.home-inner{
+	background-image: url(background.png);
+	
+}
+.navbar-brand{
+	padding-bottom: 6%;
+	width: 4rem;
+	height: 4rem;
+}
+.aboutus{
+	width: 70%;
+	height: 80%;
+}
+.tour{
+	width:285.66px;
+	height: 285.66px;
+}
+.landing {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: table;
+  z-index: -1;
+}
+.home-wrap {
+  clip: rect(0, auto, auto, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home-inner {
+  position: fixed;
+  display: table;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  will-change: transform;
+}
+.caption{
+	width: 100%;
+	max-width: 100%;
+	position: absolute;
+	top: 38%;
+	z-index: 1;
+	color: white;
+}
+h1{
+	padding-top: 4rem;
+}
+.caption h1{
+	font-size: 7rem;
+	font-weight: 700;
+	letter-spacing: .3rem;
+	text-shadow: .1rem .1rem .8rem black;
+	padding-bottom: 1rem;
+	} 
+.caption h3{
+	font-size: 5rem;
+	text-shadow: .1rem .1rem .8rem black;
+}
+.padding{
+	padding-bottom: 2rem;
+}
+
+
+.fa-balance-scale, .fa-fist-raised, .fa-users, .fa-book{
+	color: #4C8CFF;
+	font-size: 4rem;
+	margin: 1rem;
+}
+
+h2{
+	padding-bottom: 1rem;
+}
+img{
+	width: 100%;
+}
+hr{
+	border-top: 2px solid #4C8CFF;
+	width: 95%;
+	margin-top: .3rem;
+	margin-bottom: 1rem;
+}
+footer{
+	width: 100%;
+	background-color:  #f8f9fa;
+	padding: 5%;
+	color: #4C8CFF;
+}
+.icon{
+	max-width: 150px;
+}
+@media(max-width: 768px){
+	.caption h1{
+		font-size: 300%;
+	}
+	.fa{
+		font-size: 20px;
+		padding: 10px;
+	}
+	.icon{
+		padding-top: 5%;
+		max-width: 70px;
+	}
+}
+.h img:hover{
+	transform: scale(1.2);
+}
+
+.details{
+	position: absolute;
+	top: 10px;	
+}
+
+
+
+
+
+
+
+
+.img-area{
+    width: 100%;
+}
+.work1:hover .side-two {
+    transform: rotateY(0deg);
+    border-radius: .25rem;
+}
+
+.work1:hover .side-one {
+    transform: rotateX(180deg);
+}
+
+.content-area {
+    transform: perspective(1000px);
+    transition: 1s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.side-one {
+    position: relative;
+    transform: rotateX(0deg);
+    z-index: 2;
+}
+
+.side-two {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    transform: rotateX(-180deg);
+}
+
+.side-one,
+.side-two {
+    backface-visibility: hidden;
+    transition: 1s;
+    transform-style: preserve-3d;
+}
+
+.side-one .card,
+.side-two .card {
+    min-height: 312px;
+}
+
+.side-two .card a {
+    font-size: 18px;
+    color: #1C40FF;
+}
+
+h4 {
+    color: #1C40FF;
+    letter-spacing: 5px;
+    font-size: 25px;
+}
+
+.side-one .card .card-body img {
+    width: 100%;
+}
